@@ -2,19 +2,19 @@ package codesyncgroup.ticketsystem.Entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Builder
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name = "role")
-public class RoleEntity {
+@Table(name = "status")
+public class StatusEntity {
+
     @Id
-    @Column(name = "id_role", unique = true, nullable = false)
-    Long idRole;
-    String nameRole;
+    @Column(name = "id_unit", unique = true, nullable = false)
+    private Long idUnit;
+    private String status;
+
 }
