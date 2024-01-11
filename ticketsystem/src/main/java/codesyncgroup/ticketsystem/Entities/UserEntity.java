@@ -20,7 +20,7 @@ import java.util.List;
 @Table(name = "user", uniqueConstraints = {@UniqueConstraint(columnNames = {"username"})})
 public class UserEntity implements UserDetails {
     @Id
-    @Column(name = "id_user")
+    @Column(name = "id_user", unique = true, nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long idUser;
     String username;

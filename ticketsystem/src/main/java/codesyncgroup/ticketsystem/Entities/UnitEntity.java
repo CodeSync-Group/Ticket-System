@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "unit")
 public class UnitEntity {
     @Id
-    @Column(name = "id_unit")
+    @Column(name = "id_unit", unique = true, nullable = false)
     Long idUnit;
     String nameUnit;
     String descriptionUnit;
