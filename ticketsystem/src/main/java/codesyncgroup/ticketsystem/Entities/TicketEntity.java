@@ -29,11 +29,11 @@ public class TicketEntity {
     private UserEntity creator;
 
     @ManyToOne
-    @JoinColumn(name = "id_user")
+    @JoinColumn(name = "id_headship")
     private UserEntity headship;
 
     @ManyToOne
-    @JoinColumn(name = "id_user")
+    @JoinColumn(name = "id_analyst")
     private UserEntity ananlyst;
 
     @ManyToOne
