@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,25 +39,62 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
 
 /* SideBar */
 
 .side-bar {
-  position: absolute;
+  /* width: 24px; */
+  position: fixed;
   height: 100vh;
-  width: 100px;
   background: #fef5ea;
-  background: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 20px 20px;
   left: 0px;
   top: 0px;
-  /* border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px; */
-  /* border: thin solid red; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  gap: 5px;
+  border-right: 1.5px solid black;
+  /* transition: width 0.2s ease; */
+}
+
+.side-bar-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: start;
+  overflow-y: scroll;
 }
 
 .side-bar-icon {
-  width: 40px;
+  width: 24px;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.side-bar-icon:hover {
+  transform: scale(1.2);
+}
+
+.side-bar-open {
+  align-items: start;
+  /* width: 120px;j */
+}
+
+.side-bar-text {
+  display: inline;
+  margin-left: 20px;
+}
+
+.side-bar-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: black;
 }
