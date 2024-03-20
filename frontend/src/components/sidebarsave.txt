@@ -1,0 +1,40 @@
+<nav className={`side-bar ${isSideBarOpen ? "side-bar-open" : ""}`}>
+      <div className="side-bar-content">
+        <div className="side-bar-logo" onClick={handleSideBar}>
+          <BarsIcon />
+        </div>
+
+        <a
+          href=""
+          title="Home"
+          className={`${isSideBarOpen ? "icon-close" : "icon-open"}`}
+        >
+          <HomeIcon />
+          {isSideBarOpen && <span className="side-bar-text">Home</span>}
+        </a>
+        <a
+          href=""
+          title="My Tickets"
+          className={`${isSideBarOpen ? "icon-close" : "icon-open"}`}
+        >
+          <TicketIcon />
+          {isSideBarOpen && <span className="side-bar-text">My Tickets</span>}
+        </a>
+        <a
+          href=""
+          title="Statistics"
+          className={`${isSideBarOpen ? "icon-close" : "icon-open"}`}
+        >
+          <StatsIcon />
+          {isSideBarOpen && <span className="side-bar-text">Statistics</span>}
+        </a>
+        <a
+          href=""
+          title="Users"
+          className={`${isSideBarOpen ? "icon-close" : "icon-open"}`}
+        >
+          <UsersIcon />
+          {isSideBarOpen && <span className="side-bar-text">Users</span>}
+        </a>
+      </div>
+    </nav>
